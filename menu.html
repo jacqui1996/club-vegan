@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño web con Bootstrap</title>
+    <script src="https://kit.fontawesome.com/0c299164a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+
+<body>
+    <style>
+        /* Navbar con espaciado a los laterales y con un ancho total ajustado */
+        .navbar-custom {
+            padding-left: 100px;
+            padding-right: 100px;
+            width: 100%; /* Asegura que ocupe el ancho completo */
+            box-sizing: border-box; /* Para que el padding no afecte al ancho total */
+            background-color: #FF8A00; /* Color de fondo naranja */
+        }
+      
+        /* Alineación del logotipo */
+        .navbar-brand img {
+            width: auto;
+            height: 100px; /* Limitar el tamaño del logo (ajustado a 100px de altura) */
+        }
+      
+        /* Alineación de las opciones del menú */
+        .navbar-nav .nav-link {
+            color: white; /* Color del texto de los enlaces en blanco */
+        }
+      
+        /* Ajustar espacio entre el icono y el texto */
+        .nav-item .nav-link i {
+            margin-right: 8px;
+            color: white; /* Color de los íconos en blanco */
+        }
+      
+        /* Cambiar color de los enlaces al pasar el cursor */
+        .navbar-nav .nav-link:hover {
+            color: #5B4129; /* Color del texto al hacer hover (un tono más oscuro de naranja) */
+        }
+      
+        /* Cambiar color de los iconos al pasar el cursor */
+        .nav-item .nav-link:hover i {
+            color: #5B4129; /* Tono más oscuro de naranja para los iconos */
+        }
+      
+        /* Cambiar color de la barra de navegación al hacer hover en el menú */
+        .navbar-toggler-icon {
+            background-color: white; /* Cambiar color del icono del menú hamburguesa a blanco */
+        }
+      </style>
+      
+      <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+          <div class="container-fluid">
+            <!-- Logotipo alineado a la izquierda -->
+            <a class="navbar-brand" href="#">
+              <img src="img/logo-02-01.png" alt="Logo" class="d-inline-block align-text-top"> 
+            </a>
+            
+            <!-- Menú desplegable para pantallas grandes -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menú de navegación alineado a la derecha -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="inicio.html"><i class="fas fa-home"></i>Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu.html"><i class="fas fa-info-circle"></i>Menú</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="promociones.html"><i class="fas fa-phone-alt"></i>Promociones</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+
+
+
+
+      <!-- Menu Start -->
+
+    
+      <div class="container-xxl py-5"> 
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">          
+                <h1 class="mb-5">Menú del día</h1>
+            </div>
+          
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Espaguetis de calabacín</span>
+                                            <span class="text-primary">S/.35</span>
+                                        </h5>
+                                        <small class="fst-italic">Rico en agua y fibra, además, con bajo aporte calórico.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Pasta con vegetales al wok</span>
+                                            <span class="text-primary">S/.35</span>
+                                        </h5>
+                                        <small class="fst-italic">Pasta carbonara vegana con guisantes y tofu ahumado crujiente</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Fideos de arroz con soja y verduras</span>
+                                            <span class="text-primary">S/.35</span>
+                                        </h5>
+                                        <small class="fst-italic">Prueba esta deliciosa receta masala vegano y lleno de sabor</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Sopa de fideos</span>
+                                            <span class="text-primary">S/.35</span>
+                                        </h5>
+                                        <small class="fst-italic">Hoy preparamos una sopa ramen con tofu crujiente.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Tofu agridulce</span>
+                                            <span class="text-primary">S/.35</span>
+                                        </h5>
+                                        <small class="fst-italic">Garbanzos con un punto crujiente y ensalada de temporada</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Arroz frito de coliflor</span>
+                                            <span class="text-primary">S/.60</span>
+                                        </h5>
+                                        <small class="fst-italic">Alimento rico en fibra, proteínas, minerales y bajo en grasa.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Tofu Burger</span>
+                                            <span class="text-primary">S/.25</span>
+                                        </h5>
+                                        <small class="fst-italic">Tofu de quinoa y garbanzos, caseras, sencillas y buenísimas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Berenjenas al miso</span>
+                                            <span class="text-primary"> S/.47 </span>
+                                        </h5>
+                                        <small class="fst-italic">Uno de esos platos o guisos tradicionales. Para una versión 100% vegetal usaremos seitán.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">S/.40</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                    <div class="w-100 d-flex flex-column text-start ps-4">
+                                        <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                            <span>Chicken Burger</span>
+                                            <span class="text-primary">$115</span>
+                                        </h5>
+                                        <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        /* Estilos personalizados */
+        .card-img-top {
+            object-fit: cover;  /* Hace que la imagen se ajuste bien a la tarjeta */
+            height: 200px;      /* Define una altura fija para las imágenes */
+            transition: transform 0.3s ease-in-out; /* Transición suave para el zoom */
+        }
+    
+        /* Aplicar zoom al pasar el cursor */
+        .card-img-top:hover {
+            transform: scale(1.1); /* Escala la imagen un 10% al pasar el cursor */
+        }
+    
+        /* Caja amarilla al final */
+        .yellow-box {
+            background-color: #ff7b00;  /* Fondo amarillo */
+            padding: 20px;             /* Espaciado interior */
+            text-align: center;        /* Centrado del texto */
+            color: #f8f9fa;
+        }
+    </style>
+    
+    <body>
+    
+    <!-- Sección de Platillos Famosos -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Nuestros Menús Más Famosos</h2>
+        <div class="row justify-content-center">
+            <!-- Tarjeta del Platillo 1 -->
+            <div class="col-md-5 mb-4">
+                <div class="card">
+                    <img src="img/platofavorito.jpg" class="card-img-top" alt="Platillo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger al Olivo</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ingredientes:</h6>
+                        <ul>
+                            <li>Tomates frescos</li>
+                            <li>Lechuga orgánica</li>
+                            <li>Aguacate</li>
+                            <li>Garbanzos cocidos</li>
+                            <li>Vinagreta de aceite de oliva</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tarjeta del Platillo 2 -->
+            <div class="col-md-5 mb-4">
+                <div class="card">
+                    <img src="img/pltillofavorito2.jpg" class="card-img-top" alt="Platillo 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Ensalada Cobb</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Ingredientes:</h6>
+                        <ul>
+                            <li>Quinoa cocida</li>
+                            <li>Espárragos asados</li>
+                            <li>Tofu ahumado</li>
+                            <li>Chía</li>
+                            <li>Pepitas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Caja amarilla debajo de los platillos -->
+<div class="yellow-box">
+    <h3>¡Te esperamos para disfrutar de estos deliciosos platillos!</h3>
+    <p>Recuerda que también tenemos opciones para Delivery. ¡Haz tu pedido ahora!</p>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <body>
+
+    <!-- Sección "Nuestra Carta" -->
+    <div class="container mt-5">
+      
+
+        <!-- Menú, Plato de Fondo, Postre -->
+        <div class="row">
+            <!-- Menú -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="img/entrada.jpg" class="card-img-top" alt="Menú Vegetariano">
+                    <div class="card-body">
+                        <h5 class="card-title">Menú</h5>
+                        <p class="card-text">Disfruta de una variedad de ensaladas, sopas y platos fríos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plato de Fondo -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="img/menu.jpg" class="card-img-top" alt="Plato Principal">
+                    <div class="card-body">
+                        <h5 class="card-title">Plato de Fondo</h5>
+                        <p class="card-text">Platos principales deliciosos y llenos de sabor, ideales para tu almuerzo o cena.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Postre -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="img/Postre (1).jpg" class="card-img-top" alt="Postre Vegano">
+                    <div class="card-body">
+                        <h5 class="card-title">Postres</h5>
+                        <p class="card-text">Postres veganos y sin gluten, perfectos para cerrar tu comida con algo dulce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+    
+
+<style>
+  /* Estilo para la caja de formulario de contacto */
+  .contact-form-box {
+      background-color: #f8f9fa; /* Fondo gris claro */
+      padding: 40px;
+      border-radius: 10px 10px 0 0;
+      margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Caja de formulario de contacto -->
+<div class="container">
+  <div class="contact-form-box">
+      <h2 class="text-center mb-4">¿Qué vas a pedir hoy?</h2>
+      
+      <!-- Formulario -->
+      <form>
+          <!-- Nombre y Apellido -->
+          <div class="row mb-3">
+              <div class="col-md-6">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" required>
+              </div>
+              <div class="col-md-6">
+                  <label for="apellido" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="apellido" required>
+              </div>
+          </div>
+
+          <!-- Dirección y Teléfono -->
+          <div class="row mb-3">
+              <div class="col-md-6">
+                  <label for="direccion" class="form-label">Dirección</label>
+                  <input type="text" class="form-control" id="direccion" required>
+              </div>
+              <div class="col-md-6">
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input type="tel" class="form-control" id="telefono" required>
+              </div>
+          </div>
+
+          <!-- Selección de Delivery -->
+          <div class="mb-3">
+              <label for="delivery" class="form-label">¿Deseas pedir delivery?</label>
+              <select class="form-select" id="delivery" required>
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+              </select>
+          </div>
+
+          <!-- Botón de envío -->
+          <div class="text-center">
+              <button type="submit" class="btn btn-success">Enviar</button>
+          </div>
+      </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    .footer {
+      background-color: #FF8A00;
+      padding: 40px 0;
+    }
+
+    .footer-logo {
+      max-width: 150px;
+    }
+
+    .social-icons a {
+      font-size: 1.5rem;
+      margin-right: 10px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #FF8A00;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Columna para el logo -->
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <img src="img/logo-02-01.png" alt="Logo" class="footer-logo">
+        </div>
+
+        <!-- Columna para las redes sociales -->
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <div class="social-icons"> 
+            <a href="https://www.facebook.com/ManzanaVerdeLatam" target="_blank" class="fab fa-facebook-f" aria-label="Facebook"></a>
+            <a href="https://www.instagram.com/manzanaverde.pe/" target="_blank" class="fab fa-instagram" aria-label="Instagram"></a>
+            <a href="https://www.linkedin.com/company/manzanaverde/" target="_blank" class="fab fa-linkedin-in" aria-label="LinkedIn"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <!-- Contenedor principal con Bootstrap -->
+  <div class="container py-5">
+    <!-- Espacio para el párrafo -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <p class="lead text-center">
+            Santisteban Jacqueline - Zacarias Alexandra - Rodriguez Daniela
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+
+</body>
+</html>
+
+

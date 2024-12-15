@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño web con Bootstrap</title>
+    <script src="https://kit.fontawesome.com/0c299164a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+
+<body>
+    <style>
+        /* Navbar con espaciado a los laterales y con un ancho total ajustado */
+        .navbar-custom {
+            padding-left: 100px;
+            padding-right: 100px;
+            width: 100%; /* Asegura que ocupe el ancho completo */
+            box-sizing: border-box; /* Para que el padding no afecte al ancho total */
+            background-color: #FF8A00; /* Color de fondo naranja */
+        }
+      
+        /* Alineación del logotipo */
+        .navbar-brand img {
+            width: auto;
+            height: 100px; /* Limitar el tamaño del logo (ajustado a 100px de altura) */
+        }
+      
+        /* Alineación de las opciones del menú */
+        .navbar-nav .nav-link {
+            color: white; /* Color del texto de los enlaces en blanco */
+        }
+      
+        /* Ajustar espacio entre el icono y el texto */
+        .nav-item .nav-link i {
+            margin-right: 8px;
+            color: white; /* Color de los íconos en blanco */
+        }
+      
+        /* Cambiar color de los enlaces al pasar el cursor */
+        .navbar-nav .nav-link:hover {
+            color: #5B4129; /* Color del texto al hacer hover (un tono más oscuro de naranja) */
+        }
+      
+        /* Cambiar color de los iconos al pasar el cursor */
+        .nav-item .nav-link:hover i {
+            color: #5B4129; /* Tono más oscuro de naranja para los iconos */
+        }
+      
+        /* Cambiar color de la barra de navegación al hacer hover en el menú */
+        .navbar-toggler-icon {
+            background-color: white; /* Cambiar color del icono del menú hamburguesa a blanco */
+        }
+      </style>
+      
+      <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+          <div class="container-fluid">
+            <!-- Logotipo alineado a la izquierda -->
+            <a class="navbar-brand" href="#">
+              <img src="img/logo-02-01.png" alt="Logo" class="d-inline-block align-text-top"> 
+            </a>
+            
+            <!-- Menú desplegable para pantallas grandes -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menú de navegación alineado a la derecha -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="inicio.html"><i class="fas fa-home"></i>Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu.html"><i class="fas fa-info-circle"></i>Menú</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="promociones.html"><i class="fas fa-phone-alt"></i>Promociones</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+
+
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Primer ítem -->
+              <div class="carousel-item active">
+                <img src="img/CA.jpg" class="d-block w-100" alt="Imagen 1">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <!-- Segundo ítem -->
+              <div class="carousel-item">
+                <img src="img/CA-2.jpg" class="d-block w-100" alt="Imagen 2">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <!-- Tercer ítem -->
+              <div class="carousel-item">
+                <img src="img/CA.jpg" class="d-block w-100" alt="Imagen 3">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+            </div>
+          
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+          
+          <!-- Incluir los scripts de Bootstrap 5 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="container my-5">
+            <div class="row">
+                <!-- Promo 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card promo-card">
+                        <div class="img-container">
+                            <img src="img/pizza vegana.jpg" class="card-img-top img-zoom" alt="Promo 1">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Descuento del 20% en Pizzas Veganas</h5>
+                            <p class="card-text">Disfruta de nuestras pizzas artesanales veganas con un 20% de descuento. ¡Solo este fin de semana!</p>
+                            <a href="#" class="btn custom-btn">Oferta Especial</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card promo-card">
+                        <div class="img-container">
+                            <img src="img/plato vegano.jpg" class="card-img-top img-zoom" alt="Promo 2">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">2x1 en Desayunos</h5>
+                            <p class="card-text">Ven con un amigo y disfruta de nuestra promoción 2x1 desayunos saludables y ricos al paladar.</p>
+                            <a href="#" class="btn custom-btn">Oferta Especial</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card promo-card">
+                        <div class="img-container">
+                            <img src="img/combo familiar.jpg" class="card-img-top img-zoom" alt="Promo 3">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Combo Familiar</h5>
+                            <p class="card-text">Un menú completo para 4 personas por solo $49.99. ¡Perfecto para compartir!</p>
+                            <a href="#" class="btn custom-btn">Oferta Especial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+
+
+
+
+        
+        <!-- Agregar CSS personalizado -->
+        <style>
+            /* Efecto de zoom en las imágenes */
+            .img-container {
+                overflow: hidden;
+            }
+            .img-zoom {
+                transition: transform 0.3s ease-in-out;
+            }
+            .img-zoom:hover {
+                transform: scale(1.1);
+            }
+        
+            /* Color personalizado para los botones */
+            .custom-btn {
+                background-color: #5B4129;
+                color: white;
+                border: none;
+            }
+            .custom-btn:hover {
+                background-color: #ff7b00; /* Un tono más oscuro al hacer hover */
+            }
+        </style>
+
+
+
+
+
+
+
+
+
+<div class="container my-5">
+    <!-- Primera fila con título -->
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <h2>Nuestras Categorias</h2>
+      </div>
+    </div>
+  
+    <!-- Segunda fila con 4 imágenes -->
+    <div class="row">
+      <!-- Columna 1 -->
+      <div class="col-md-3 mb-4">
+        <img src="img/PLATO-PRIN.jpg" class="img-fluid zoom-effect" alt="Imagen 1">
+      </div>
+      <!-- Columna 2 -->
+      <div class="col-md-3 mb-4">
+        <img src="img/pizza-sa.jpg" class="img-fluid zoom-effect" alt="Imagen 2">
+      </div>
+      <!-- Columna 3 -->
+      <div class="col-md-3 mb-4">
+        <img src="img/POSTRE-F.jpg" class="img-fluid zoom-effect" alt="Imagen 3">
+      </div>
+      <!-- Columna 4 -->
+      <div class="col-md-3 mb-4">
+        <img src="img/BEBIDA.jpg" class="img-fluid zoom-effect" alt="Imagen 4">
+      </div>
+    </div>
+  
+  </div>
+  
+  <!-- Agregar el CSS para el efecto de zoom -->
+  <style>
+    /* Efecto de zoom al pasar el mouse */
+    .zoom-effect {
+      transition: transform 0.3s ease; /* Transición suave */
+    }
+  
+    .zoom-effect:hover {
+      transform: scale(1.1); /* Aumenta la imagen un 10% al hacer hover */
+    }
+  
+    /* Asegurarse que las imágenes no se deformen */
+    .img-fluid {
+      object-fit: cover; /* Mantiene la imagen dentro de su contenedor sin distorsionar */
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    .footer {
+      background-color: #FF8A00;
+      padding: 40px 0;
+    }
+
+    .footer-logo {
+      max-width: 150px;
+    }
+
+    .social-icons a {
+      font-size: 1.5rem;
+      margin-right: 10px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #FF8A00;
+    }
+  </style>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Columna para el logo -->
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <img src="img/logo-02-01.png" alt="Logo" class="footer-logo">
+        </div>
+
+        <!-- Columna para las redes sociales -->
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <div class="social-icons"> 
+            <a href="https://www.facebook.com/ManzanaVerdeLatam" target="_blank" class="fab fa-facebook-f" aria-label="Facebook"></a>
+            <a href="https://www.instagram.com/manzanaverde.pe/" target="_blank" class="fab fa-instagram" aria-label="Instagram"></a>
+            <a href="https://www.linkedin.com/company/manzanaverde/" target="_blank" class="fab fa-linkedin-in" aria-label="LinkedIn"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Contenedor principal con Bootstrap -->
+  <div class="container py-5">
+    <!-- Espacio para el párrafo -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <p class="lead text-center">
+            Santisteban Jacqueline - Zacarias Alexandra - Rodriguez Daniela
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+
+</body>
+</html>
+
+
