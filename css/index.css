@@ -1,0 +1,10 @@
+
+.carousel-item img {
+  height: 300px;
+  object-fit: cover; /* Hace que las imágenes cubran el contenedor sin distorsionarse */
+  width: 100%;
+}
+
+.txth1{
+    color: aquamarine;
+}
